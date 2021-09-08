@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playstation Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="Imagens/logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <main>
+    <header>
+      <img class="logo" src="Imagens/logo.png" alt="Playstation logo">
+      <nav>
+        <ul id="menu-list">
+          <li class="nav-li"><a href="#" class="nav-link">Consoles</a>
+            <li class="nav-li"><a href="#" class="nav-link">Acessórios</a>
+            <li class="nav-li"><a href="#" class="nav-link">Controles</a>
+          <li class="nav-li"><a href="#" class="nav-link">Outros</a>
+        </ul>
+      </nav>
+      <img src="Imagens/menu.png" class="menu-icon" alt="menu" onclick="showMenu()">
+    </header>
+
+    <section>
+
+      <article class="column-1">
+        <h2>PS5 Dualshock</h2>
+        <h3>Wireless Controller for Playstation</h3>
+        <p>Controle Original</p>
+        <h4>R$ 222,50</h4>
+        <button class="buy">Comprar agora <img src="Imagens/arrow.png" alt="seta"></button>
+      </article>
+
+      <article class="column-2">
+        <img class="controller" src="Imagens/controller.png" alt="controle Playstation">
+        <div class="color-box"></div>
+        <button class="add-cart">
+          <img src="Imagens/add.png" alt="adicionar ao carrinho">
+        </button>
+      </article>
+
+    </section>
+
+    <footer>
+      <img src="Imagens/fb.png" alt="Facebook">
+      <img src="Imagens/ig.png" alt="Instagram">
+      <img src="Imagens/tw.png" alt="Twitter">
+    </footer>
+  </main>
+  
+</body>
+<script>
+  const menuList = document.getElementById('menu-list')
+  menuList.style.maxHeight = "0px"
+
+  function showMenu() {
+    if(menuList.style.maxHeight == "0px") {
+    menuList.style.maxHeight = "120px"
+    } else {
+      menuList.style.maxHeight = "0px"
+    }
+  }
+
+
+</script>
+</html>
